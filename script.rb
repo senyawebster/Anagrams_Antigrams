@@ -1,10 +1,10 @@
-require('./lib/anagram.rb')
+require('./lib/word.rb')
 
 
 puts "Enter Word 1"
-input1 = gets.chomp
+word1 = gets.chomp
 puts "Enter Word 2"
-input2 = gets.chomp
+word2 = gets.chomp
 
-word_pair = TwoWords.new(word1, word2)
-puts word_pair.anagram
+word_pair = Word.new(word1, word2)
+puts word_pair.anagrams
