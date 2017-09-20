@@ -1,8 +1,8 @@
 require('rspec')
-require('coin')
 require('pry')
+require('Anagrams_Antigrams')
 
-describe('anagram_checker') do
+describe('TwoWords#anagrams') do
   anagram_checker = Words.new()
 
   it("takes two arguments, breaks them into arrays, alphabetizes their elements, joins them, and then compares them") do

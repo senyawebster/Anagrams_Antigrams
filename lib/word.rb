@@ -11,14 +11,9 @@ Class Word
   #
   #   lower_word1.split.each_char do
   #     lower_word2.split.each_char do
-  #
   #     end
   #   end
-  #
   # end
-
-
-
 # end
 
 def anagrams(word1, word2)
