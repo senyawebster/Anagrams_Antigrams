@@ -3,9 +3,23 @@ require('pry')
 require('Anagrams_Antigrams')
 
 describe('TwoWords#anagrams') do
-  anagram_checker = Words.new()
-
-  it("takes two arguments, breaks them into arrays, alphabetizes their elements, joins them, and then compares them") do
-    expect(anagram_checker.anagrams(cars, scar)).to(eq(true))
+  anagram_checker = Word.new(cars, scar)
+  it("checks if two words are anagrams") do
+    expect(anagram_checker.anagrams).to(eq("these are anagrams!"))
   end
+
+  # anagram_checker = Word.new(cars, scar)
+  # it("checks if two words are anagrams") do
+  #   expect(anagram_checker.anagrams).to(eq("these are anagrams!"))
+  # end
+  #
+  # anagram_checker = Word.new(cars, scar)
+  # it("checks if two words are anagrams") do
+  #   expect(anagram_checker.anagrams).to(eq("these are anagrams!"))
+  # end
+  #
+  # anagram_checker = Word.new(cars, scar)
+  # it("checks if two words are anagrams") do
+  #   expect(anagram_checker.anagrams).to(eq("these are anagrams!"))
+  # end
 end
