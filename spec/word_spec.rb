@@ -12,7 +12,11 @@ describe('Word') do
       expect(item.anagrams).to eq("Attrs: (These words are anagrams)")
     end
 
-    # item = Word.new('', '')
+    it("accounts for the possibility of different cases") do
+      item = Word.new('Tea', 'Eat')
+      expect(item.anagrams).to eq("Attrs: (These words are anagrams)")
+    end
+
 
 
   end
