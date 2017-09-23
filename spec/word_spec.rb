@@ -22,5 +22,10 @@ describe('Word') do
       expect(item.anagrams).to eq("Attrs: (These words are not anagrams) (Word1 is a palindrome)")
     end
 
+    it("checks if a word2 is a palindrome") do
+      item = Word.new('scars', 'madam')
+      expect(item.anagrams).to eq("Attrs: (These words are not anagrams) (Word2 is a palindrome)")
+    end
+
   end
 end
