@@ -3,11 +3,17 @@ require('pry')
 require('word')
 
 
-describe('#anagrams') do
-  anagram_checker = Word.new('cars', 'scar')
-  it("checks if two words are anagrams") do
-    expect(anagram_checker.anagrams).to(eq("these are anagrams!"))
+describe('Word') do
+  describe('#anagrams') do
+
+
+    it("checks if two words are anagrams") do
+      item = Word.new('cars', 'scar')
+      expect(item.anagrams).to eq("Attrs: (These words are anagrams)")
+    end
+
+    # item = Word.new('', '')
+
+
   end
-
-
 end
