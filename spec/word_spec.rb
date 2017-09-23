@@ -27,5 +27,10 @@ describe('Word') do
       expect(item.anagrams).to eq("Attrs: (These words are not anagrams) (Word2 is a palindrome)")
     end
 
+    it("checks if inputted words are words at all") do
+      item = Word.new('zzz', 'ttt')
+      expect(item.anagrams).to eq("Attrs: (Word 1 is not a real word) (Word 2 is not a real word) (These words are not anagrams) (Word1 is a palindrome) (Word2 is a palindrome)")
+    end
+
   end
 end
