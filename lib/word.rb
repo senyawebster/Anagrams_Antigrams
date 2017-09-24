@@ -37,6 +37,9 @@ class Word
     if @word2.chars == @word2.chars.reverse
       word_attrs += " (Word2 is a palindrome)"
     end
+    if array1.none? {|letter| array2.include?(letter)}
+      word_attrs += " (These words are antigrams)"
+    end
     return word_attrs
   end
 end

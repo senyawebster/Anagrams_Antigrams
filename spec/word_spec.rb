@@ -28,8 +28,13 @@ describe('Word') do
     end
 
     it("checks if inputted words are words at all") do
-      item = Word.new('zzz', 'ttt')
+      item = Word.new('zzz', 'tzt')
       expect(item.anagrams).to eq("Attrs: (Word 1 is not a real word) (Word 2 is not a real word) (These words are not anagrams) (Word1 is a palindrome) (Word2 is a palindrome)")
+    end
+
+    it("check if inputted words are antigrams") do
+      item = Word.new('bee', 'ant')
+      expect(item.anagrams).to eq("Attrs: (These words are not anagrams) (These words are antigrams)")
     end
 
   end
